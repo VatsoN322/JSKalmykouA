@@ -61,7 +61,7 @@ for (;;) {
         const num1 = +prompt("Введите первое число:");
         const num2 = +prompt("Введите второе число:");
         const operation = prompt("Введите операцию (div, plus, mult, minus):");
-        if (num1 && num2 && operation) {
+        if (num1 && num2 && operation && !isNaN(num1) && !isNaN(num2)) {
             if (operation == "div") {
                 alert(num1 / num2);
             } else if (operation == "plus") {
