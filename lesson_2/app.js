@@ -21,6 +21,7 @@ else
     console.log(`Здравствуйте, Noname`);
 }
 */
+/*
 //Задание 2
 const num = prompt("Write a number:");
 if (isNaN(+num)) {
@@ -60,3 +61,19 @@ if (isNaN(+num)) {
         message += "недробное";
     console.log(message);
 }
+*/
+//Задание 3
+//Задание 3.1
+ const num1 = +prompt("Введите первое число:");
+ const num2 = +prompt("Введите второе число:");
+ const num3 = +prompt("Введите третье число:");
+ const sum = num1 + num2 + num3;
+ isNaN(sum) ? alert("При вводе данных была допущена ошибка") : alert(sum);
+
+ //Задание 3.2
+ const yourname = prompt("Введите ваше имя");
+ const age = prompt("Введите свой возраст");
+ yourname && !isNaN(age) ? 
+ (age >= 18 ? alert("Добро пожаловать " + yourname + "!") : 
+ alert("Уважаемый " + yourname + "! Доступ закрыт.")) : 
+ alert("При вводе данных была допущена ошибка");
