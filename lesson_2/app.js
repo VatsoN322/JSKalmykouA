@@ -62,6 +62,7 @@ if (isNaN(+num)) {
     console.log(message);
 }
 */
+/*
 //Задание 3
 //Задание 3.1
  const num1 = +prompt("Введите первое число:");
@@ -77,3 +78,29 @@ if (isNaN(+num)) {
  (age >= 18 ? alert("Добро пожаловать " + yourname + "!") : 
  alert("Уважаемый " + yourname + "! Доступ закрыт.")) : 
  alert("При вводе данных была допущена ошибка");
+ */
+
+ //Задание 4
+ const num = prompt("Введите число от 0 до 9");
+ if(isNaN(num))
+ {
+     console.log("Вы ввели не число");
+ }
+ else
+ {
+     switch(+num)
+     {
+         case 0: console.log(`${num} -> 'Ноль'`); break;
+         case 1: console.log(`${num} -> 'Один'`); break;
+         case 2: console.log(`${num} -> 'Два'`); break;
+         case 3: console.log(`${num} -> 'Три'`); break;
+         case 4: console.log(`${num} -> 'Четрые'`); break;
+         case 5: console.log(`${num} -> 'Пять'`); break;
+         case 6: console.log(`${num} -> 'Шесть'`); break;
+         case 7: console.log(`${num} -> 'Семь'`); break;
+         case 8: console.log(`${num} -> 'Восемь'`); break;
+         case 9: console.log(`${num} -> 'Девять'`); break;
+         default: 
+         +num < 0 ? console.log("Вы ввели значение меньше 0") : console.log("Вы ввели значение больше 9"); break;
+     }
+ }
