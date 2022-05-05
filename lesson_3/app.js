@@ -93,6 +93,7 @@ do
 }
 while(true);
 */
+/*
 //Задание 3
 const num1 = +prompt("input first number");
 const num2 = +prompt("input second number");
@@ -148,6 +149,38 @@ else
             else
                 message += "положительное, ";
             console.log(message);
+        }
+    }
+}
+*/
+//Задание 4
+const num1 = +prompt("input first number");
+const num2 = +prompt("input second number");
+let iterator = 0;
+if(isNaN(num1) || isNaN(num2))
+{
+    alert("Input error");
+}
+else
+{
+    if(num1 < num2)
+    {
+        for(let i=num1; i <= num2; i++)
+        {
+            console.log(i);
+            iterator++;
+            if(iterator == 7)
+                break;
+        }
+    }
+    else
+    {
+        for(let i=num1; i>=num2; i--)
+        {
+            console.log(i);
+            iterator++;
+            if(iterator == 7)
+                break;
         }
     }
 }
