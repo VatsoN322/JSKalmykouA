@@ -153,6 +153,7 @@ else
     }
 }
 */
+/*
 //Задание 4
 const num1 = +prompt("input first number");
 const num2 = +prompt("input second number");
@@ -184,3 +185,16 @@ else
         }
     }
 }
+*/
+//Задание 5
+const a1 = prompt("Введите первое число");
+const a2 = prompt("Введите второе число");
+const a3 = prompt("Введите третье число");
+function summa(a, b, c)
+{
+    if(!isNaN(a) && !isNaN(b) && !isNaN(c))
+        return +a + +b + +c;
+    else
+        return a + b + c;
+}
+console.log(summa(a1, a2, a3));
