@@ -186,6 +186,7 @@ else
     }
 }
 */
+/*
 //Задание 5
 const a1 = prompt("Введите первое число");
 const a2 = prompt("Введите второе число");
@@ -198,3 +199,25 @@ function summa(a, b, c)
         return a + b + c;
 }
 console.log(summa(a1, a2, a3));
+*/
+//Задание 6
+function sortSumStr (str1, str2, str3)
+{
+    let strMass = [str1, str2, str3];
+    let string;
+    for(let i=0; i < 2; i++)
+    {
+        for(let j=i+1; j < 3; j++)
+        {
+            if(strMass[i] > strMass[j])
+            {
+                string = strMass[i];
+                strMass[i] = strMass[j];
+                strMass[j] = string;
+            }
+        }
+    }
+    string = strMass[0] + " " + strMass[1] + " " + strMass[2];
+    return string;
+}
+console.log(sortSumStr('qwerty','asdf','asa'));
