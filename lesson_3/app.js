@@ -1,4 +1,5 @@
 'use strict'
+/*
 //Задание 1
 do
 {
@@ -33,6 +34,60 @@ do
 				break;
 			}
 		}
+	}
+}
+while(true);
+*/
+//Задание 2
+const pin = "12345";
+const puc = "12345";
+let pinBlockFlag = false;
+let pucBlockFlag = false;
+let pinIterator = 0;
+let pucIterator = 0;
+let inputStr
+do
+{
+	if(pinBlockFlag == false)
+	{
+		inputStr = prompt("Input PIN-code");
+		if(inputStr == pin)
+		{
+			console.log("Access is allowed");
+			break;
+		}
+		else
+		{
+			console.log("Incorrect PIN. Try again.");
+			pinIterator++;
+			if(pinIterator == 3)
+			{
+				pinBlockFlag = true;
+			}
+		}
+	}
+	else if(pucBlockFlag == false)
+	{
+		inputStr = prompt("Input PUC-code");
+		if(inputStr == puc)
+		{
+			console.log("Access is allowed");
+			break;
+		}
+		else
+		{
+			console.log("Incorrect PUC. Try again.");
+			pucIterator++;
+		}
+		if(pucIterator == 3)
+		{
+			pucBlockFlag = true;
+		}
+	}
+	else
+	{
+		console.log("You are blocked");
+		break;
 	}
 }
 while(true);
