@@ -223,6 +223,7 @@ function sortSumStr (str1, str2, str3)
 }
 console.log(sortSumStr('qwerty','asdf','asa'));
 */
+/*
 //Задание 7
 function sign (yourName)
 {
@@ -233,3 +234,20 @@ function sign (yourName)
     return "С уважением, " + yourName;
 }
 console.log(sign());
+*/
+//Задание 8
+function pow(a1, a2)
+{
+    if(a1 > 0 && a2 > 0 && a1%2 == 0 && a2%2 == 0 && a1 != NaN && a2 != NaN)
+    {
+        if(!a2)
+            a2 = 2;
+    return a1 ** a2;
+    }
+    else
+    {
+        console.log('Введены не верные данные');
+        return 0;
+    }
+}
+console.log(pow(3,3));
