@@ -200,6 +200,7 @@ function summa(a, b, c)
 }
 console.log(summa(a1, a2, a3));
 */
+/*
 //Задание 6
 function sortSumStr (str1, str2, str3)
 {
@@ -221,3 +222,14 @@ function sortSumStr (str1, str2, str3)
     return string;
 }
 console.log(sortSumStr('qwerty','asdf','asa'));
+*/
+//Задание 7
+function sign (yourName)
+{
+    while(!yourName)
+    {
+        yourName = prompt("Enter your name");;
+    }
+    return "С уважением, " + yourName;
+}
+console.log(sign());
