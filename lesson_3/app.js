@@ -38,6 +38,7 @@ do
 }
 while(true);
 */
+/*
 //Задание 2
 const pin = "12345";
 const puc = "12345";
@@ -91,3 +92,62 @@ do
 	}
 }
 while(true);
+*/
+//Задание 3
+const num1 = +prompt("input first number");
+const num2 = +prompt("input second number");
+if(isNaN(num1) || isNaN(num2))
+{
+    alert("Input error");
+}
+else if((num1 - Math.trunc(num1) != 0) || (num2 - Math.trunc(num2) != 0))
+{
+    alert("Одно из веденных чисел дробное.");
+}
+else
+{
+    if(num1 < num2)
+    {
+        for(let i=num1; i <= num2; i++)
+        {
+            let message = i + ": ";
+            if (i > 100)
+                message += "больше ста, ";
+            else if (i == 100)
+                message += "равно ста, ";
+            else
+                message += "меньше ста, ";
+            if (i % 2 == 0)
+                message += "четное, ";
+            else
+                message += "нечетное, ";
+            if (i < 0)
+                message += "отрицательное, ";
+            else
+                message += "положительное, ";
+            console.log(message);
+        }
+    }
+    else
+    {
+        for(let i=num1; i>=num2; i--)
+        {
+            let message = i + ": ";
+            if (i > 100)
+                message += "больше ста, ";
+            else if (i == 100)
+                message += "равно ста, ";
+            else
+                message += "меньше ста, ";
+            if (i % 2 == 0)
+                message += "четное, ";
+            else
+                message += "нечетное, ";
+            if (i < 0)
+                message += "отрицательное, ";
+            else
+                message += "положительное, ";
+            console.log(message);
+        }
+    }
+}
